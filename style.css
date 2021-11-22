@@ -1,0 +1,394 @@
+ @charset "utf-8";
+/* CSS Document */
+
+{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: tohama;
+}
+#header {
+	height: 40px;
+	width: 100%;
+	background: #f6f6f6;
+}
+#margin-header{
+	width: 1024px;
+	height: 35px;
+	margin: 0px auto;
+}
+#margin-header ul{
+	margin: 0px;
+	padding: 0px;
+}
+#margin-header ul li {
+	float: left;
+	list-style: none;
+}
+#margin-header ul li a{
+	display: block;
+	text-decoration: none;
+	color: #000;
+	line-height: 35px;
+	padding: 0px 15px 0px 25px;
+}
+#margin-header ul li a.phone{
+	background: url("../Tui xach/phone.png") no-repeat 1px;
+}
+#margin-header ul li a.hotline{
+	background: url("../Tui xach/hotline.png") no-repeat 1px;
+}
+#margin-header ul li a.address{
+	background: url("../Tui xach/address.png") no-repeat 1px;
+}
+#top{
+	width: 1024px;
+	margin: 10px auto;
+}
+#logo , #search , #register{
+	float: left;
+	width: 300px;
+}
+.logo {
+	width: 290px;
+	height: 70px;
+}
+#search {
+	width: 468px;
+	margin-top: 10px;
+}
+#search form input[type="text"]{
+	border: 2px solid #08c;
+	height: 36px;
+	width: 360px;
+	text-indent: 10px;
+}
+#search form input[type="submit"]{
+	border: none;
+	height: 42px;
+	width: 100px;	
+	margin-left: -4px;
+	background: #08c url("search.png") no-repeat center;
+	cursor: pointer;
+}
+#register {
+	width: 250px;
+}
+#register ul{
+	margin: 0px;
+	padding: 0px;
+}
+#register ul li{
+	list-style: none;
+	float: left;
+	margin-left: 10px;
+	position: relative;
+}
+#register ul li a{
+	text-decoration: none ;
+	display: block;
+	width: 32px;
+	line-height: 80px;
+	height: 33px;
+	
+}
+#register ul li a.res{
+	background: url("res.png") no-repeat center;
+	width: 60px;
+	text-align: center;
+}
+#register ul li a.login{
+	background: url("login.png") no-repeat center;
+	width: 90px;
+	text-align: center;
+}
+#register ul li a.cart{
+	background: url("cart.png") no-repeat center;
+	width: 60px;
+	text-align: center;
+}
+#register ul li span.total{
+	background: red;
+	color: #fff;
+	border-radius: 50px;
+	width: 20px;
+	height: 18px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+#banner{
+	width: 1024px;
+	clear: left;
+	margin: 0px auto;
+}
+#banner div#menu-left{
+	width: 280px;
+	float: left;
+	background: #f7f7f7;
+	border: 1px solid #f7f7f7;
+}
+#banner div#menu-left h3{
+	height: 40px;
+	font-size: 16px;
+	background: #08c;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+	margin: 0px auto;
+}
+#banner div#menu-left ul{
+	margin: 0px;
+	padding: 0px;
+}
+#banner div#menu-left ul li{
+	list-style: none;
+}
+
+#banner div#menu-left ul li img {
+	width: 36px;
+	height: 30px;
+}
+#banner div#menu-left ul li a{
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	line-height: 50px ;
+	border-bottom: 1px solid #eaeaea;
+	background: 1px no-repeat 2px ;
+	background-size: 20px;
+	padding-left: 40px;
+	margin-top: -40px;
+}
+.menu-top{
+	width: 820px;
+	height: 40px;
+}
+.menu-top ul{
+	margin: 0px;
+	padding: 0px;
+}
+.menu-top ul li{
+	float: left;
+	list-style: none;	
+}
+.menu-top ul li a{
+	display: block;
+	padding: 0px 2px 0px 2px;
+	text-decoration: none;
+	color: #000;
+	line-height: 40px;
+	border-right: 40px solid #fff;
+	padding-left: 0px;
+}
+.menu-top ul li a:hover{
+	color: red;
+}
+.slider{
+	position: relative;
+    background: #ccc;
+    height: 480px;
+    width: 600px;
+    margin-left: 281px;
+}
+.slider img{
+	position:absolute;
+	width: 600px;
+	height: 480px;
+}
+.slider a{
+	display: block;
+	width: 60px;
+	height: 45px;
+	background-color: rgba(0,0,0,.50);
+	z-index: 1000;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	line-height: 45px;
+	font-weight: bold;
+}
+.next{
+	position: absolute;
+	right: 0px;
+	top:190px;
+}
+.prev{
+	position: absolute;
+	left: 0px;
+	top:190px;
+}
+#banner div#product-new {
+	width: 100px;
+	height: 40px;
+	position: relative;
+	float: right;
+	margin: -440px auto;
+}
+#banner div#product-new h3 {
+	color: #fff;
+	font-size: 16px;
+	background: #08c;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: -40px auto;
+	position: absolute;
+	margin-left: -42px;
+}
+#banner div#product-new ul{
+	margin: 0px;
+	padding: 0px;
+	margin-left: -42px;
+}
+#banner div#product-new ul li {
+	list-style: none;
+}
+#banner div#product-new ul li img{
+	width: 200px;
+	height: 170px;
+}
+#banner div#product-new ul li a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	color: #000;
+	line-height: 20px;
+}
+
+#services-wrapper{
+    width: 1349px;
+    height: 93px;
+    background-color:#F7F7F7  ;
+    margin-top: -475px;
+    
+}
+.container {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+	margin-top: 500px;
+}
+.service-item {
+    display: flex;
+   padding-right: 50px;
+    font-size: 12px;
+    margin-left: 0px;
+    margin-top: 0px;
+    border-right: 1px solid gainsboro;
+    
+}
+.service-item .icon img{
+	width: 90px;
+	height: 93px;
+   padding-right: 15px;
+ 
+}
+.service-item1 {
+    font-size: 12px;
+    margin-left: 30px;
+    display: flex;
+    margin-top:30px;
+   
+    
+}
+.service-item1 .icon{
+	width: 20px;
+	height: 20px;
+    padding-right: 15px;
+   
+}
+.service-item h3 {
+    
+    font-size: 15px;
+}
+.service-item1 h3 {
+    font-size: 15px;
+}
+.service-item p {
+    margin-top:5px;
+}
+.service-item1 p {
+    margin-top:5px;
+}
+#shipping {
+	height: 40px;
+	width: 100%;
+	background: #f6f6f6;
+	margin-top: 20px;
+}
+#Text{
+	width: 1024px;
+	height: 40px;	
+}
+#shipping div#Text ul {
+	margin: 0px;
+	padding: 0px;
+}
+#shipping div#Text ul li {
+	float: left;
+	list-style: none;	
+}
+#shipping div#Text ul li a{
+	width: 1024px;
+	height: 40px;
+	font-size: 26px;
+	font-weight: bold;
+	color: red;
+	text-decoration: none;
+	display: block;
+	padding-left: 130px;
+	line-height: 40px;
+}
+#shipping div#IMG-ICON {
+	width: 1200px;
+}
+#shipping div#IMG-ICON ul{
+	margin: 0px;
+	padding: 0px;
+}
+#shipping div#IMG-ICON ul li {
+	list-style: none;
+	float: left;
+	padding-left: 60px;
+}
+#shipping div#IMG-ICON ul li img{
+	width: 200px;
+	height: 170px;
+}
+#shipping div#IMG-ICON ul li a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	color: #000;
+	line-height: 20px;
+}
+#shipping div#IMG-ITEM ul{
+	margin: 0px;
+	padding: 0px;
+}
+#shipping div#IMG-ITEM ul li {
+	list-style: none;
+	float: left;
+	margin-left: 30px;
+}
+#shipping div#IMG-ITEM ul li img{
+	width: 200px;
+	height: 170px;
+}
+#shipping div#IMG-ITEM ul li a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	color: #000;
+	line-height: 20px;
+	
+}

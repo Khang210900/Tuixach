@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home Work</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="header">
+	<div id="margin-header">
+		<ul>
+			<li><a href="#" class="phone">0337948653</a></li>
+			<li><a href="#" class="hotline">18006848</a></li>
+			<li><a href="#" class="address">Lĩnh Nam ,Hà Nội</a></li>
+		</ul>
+		</div>
+		 </div>
+	<div id="top">
+		<div id="logo">
+		<img src="logo.png" >
+		</div>
+		<div id="search">
+			<form action="" method="">
+				<input type="text" />
+				<input type="submit" value="&nbsp"/>
+			</form>
+		
+		</div>
+		<div id="register">
+			<ul>
+				<li><a href="" class="res">Đăng ký</a></li>
+				<li><a href="" class="login">Đăng nhập</a></li>
+				<li><a href="" class="cart">Giỏ hàng</a>
+					<span class="total">0</span>
+				
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner">
+		<div id="menu-left">
+			<h3>DANH MỤC SẢN PHẨM</h3>
+			<ul class="side-bar">
+				<li><img src="KM.png" /><a href="" >Khuyến Mãi</a></li>
+				<li><img src="aaa.png"/><a href="" >Balo</a></li>
+				<li><img src="cap.png" /><a href="" >Balo Cặp Học Sinh Tomi</a></li>
+				<li><img src="balo.png" /><a href="" >Cặp Doanh Nhân</a></li>
+				<li><img src="tuixach.png" /><a href="" >Túi Xách</a></li>
+				<li><img src="tuikeo.png" /><a href="" >Vali</a></li>
+				<li><img src="ma.png" /><a href="" >Macat</a></li>
+				<li><img src="no.png" /><a href="" >Nohoo</a></li>
+				<li><img src="sim.png" /><a href="" >Simple Carry</a></li>
+				<li><img src="La.png" /><a href="" >Lavar</a></li>
+				<li><img src="tuicachnhiet.png" /><a href="" >Túi Cách Nhiệt</a></li>
+			</ul>
+		</div>
+		<div id="banner-main">
+			<div class="menu-top">
+				<ul>
+					<li><a href="" >Trang chủ </a></li>
+				    <li><a href="" >Giới Thiệu</a></li>
+				    <li><a href="" >Sản Phẩm</a></li>
+				    <li><a href="" >Tin Tức </a></li> 
+					<li><a href="" >Hướng Dẫn</a></li>				     
+				</ul>
+			</div>
+			<div class="slider">
+				<img src="s3.jpg" class="slider-item" number="0"/>
+				<img src="s2.jpg" class="slider-item" number="1" style="display: none;"/>
+				<img src="s1.jpg" class="slider-item" number="2" style="display: none;"/>				
+				<a href="#" class="next">Next</a>
+				<a href="#" class="prev">Prev</a>
+			</div>
+			<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+			<script>
+        $(()=>{
+            
+                $('.next').click(function(){ 
+                    changeImage('next');
+                })
+                $('.prev').click(function(){
+                    changeImage('prev');
+                    
+                })
+        })
+        function changeImage(type){
+            let imgSelectVisible = $('img.slider-item:visible');            
+               let imgVisible = parseInt(imgSelectVisible.attr('number'));              
+               let eqNumber = type === 'next' ? imgVisible + 1 : imgVisible - 1 ; 
+               
+               if(eqNumber >= $('.slider-item').length){
+                   eqNumber = 0
+               }                              
+               
+                     $('img.slider-item').eq(eqNumber).fadeIn();
+                     imgSelectVisible.fadeOut();                    
+        }
+            </script>
+		</div>
+		<div id="product-new">
+			<h3>SẢN PHẨM MỚI</h3>
+			<ul class="menu-right">
+				<li><img src="tui1.png" ><a href="">Túi lưới thời trang</a>
+				<p style="margin-left: 60px;margin-top:  0px;font-size: 18px;color: #09c;">299.000₫</p>
+				</li>
+		        <li><img src="tui2.png" ><a href="">Túi Cuộn Mep</a>
+				<p style="margin-left: 60px;margin-top: 0px;font-size: 18px;color: #09c">450.000₫</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="services-wrapper">
+        <div class="container">
+            <div class="service-item">
+                <div class="icon">
+                    <img width="40px" height="40px" src="ship.png">
+                </div>
+                <div class="info">
+                    <h3>FREE SHIPPING</h3>
+                    <p>Giao hàng tận nơi, miễn phí trên toàn quốc</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="icon">
+                    <img width="40px" height="40px" src="baove.png">
+                </div>
+                <div class="info">
+                    <h3>SẢN PHẨM</h3>
+                    <p>Sản phẩm chính hãng, bảo hành trên toàn quốc.<p>
+                </div>
+            </div>
+            <div     class="service-item">
+                <div class="icon">
+                    <img width="40px" height="40px" src="call.png">
+                </div>
+                <div width="100px" class="info">
+                    <h3>HỖ TRỢ 24/7</h3>
+                    <p>1800 6848</p>
+                </div>
+            </div>
+            <div class="service-item1">
+                <div class="icon">
+                    <img width="40px" height="40px" src="o.png" style="width: 90px;height: 93px;
+                          margin: -30px;">
+                </div>
+                <div class="info" style="margin-top: -30px;margin-left: 20px;">
+                    <h3>CHẤT LƯỢNG</h3>
+                    <p>Đảm bảo chất lượng khi mua tại Thế Giới Túi Xách</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="shipping">
+		<div id="Text">
+			<ul>
+				<li><a href="">Balo, Cặp Học Sinh</a></li>
+			</ul>
+		</div>
+		<div id="IMG-ICON">
+			<ul class="menu">
+				<li><img src="balo1.jpg" ><a href="">Cặp Học Sinh tomiF20_blue</a>
+				<p style="margin-left: 60px;margin-top:  0px;font-size: 18px;color: #09c;">559.000₫</p>
+				</li>
+				<li><img src="balo2.jpg" ><a href="">Cặp Học Sinh tomiF20_lakeblue</a>
+				<p style="margin-left: 60px;margin-top:  0px;font-size: 18px;color: #09c;">559.000₫</p>
+				</li>
+				<li><img src="balo3.jpg" ><a href="">Cặp Học Sinh tomiF20_Navy</a>
+				<p style="margin-left: 60px;margin-top:  0px;font-size: 18px;color: #09c;">559.000₫</p>
+				</li>
+				<li><img src="balo4.jpg" ><a href="">Cặp Học Sinh tomiF20_Pink</a>
+				<p style="margin-left: 60px;margin-top:  0px;font-size: 18px;color: #09c;">559.000₫</p>
+				</li>		
+			</ul>
+		</div>
+		<div id="IMG-ITEM">
+			<ul class="menu-item">
+				<li><img src="balo5.jpg" ><a href="">Balo Học Sinh tomiB20_Royalblue</a>
+				<p style="margin-left: 60px;margin-top:  0px;font-size: 18px;color: #09c;">505.000₫</p>
+				</li>
+				<li><img src="balo6.jpg" ><a href="">Balo Học Sinh tomiF20_Navy</a>
+				<p style="margin-left: 60px;margin-top:  0px;font-size: 18px;color: #09c;">505.000₫</p>
+				</li>
+				<li><img src="balo7.jpg" ><a href="">Balo Học Sinh tomiF20_lakeblue</a>
+				<p style="margin-left: 60px;margin-top:  0px;font-size: 18px;color: #09c;">505.000₫</p>
+				</li>
+				<li><img src="balo8.jpg" ><a href="">Balo Học Sinh tomiF20_pink</a>
+				<p style="margin-left: 60px;margin-top:  0px;font-size: 18px;color: #09c;">505.000₫</p>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<div id="footer"></div>
+</body>
+</html>
